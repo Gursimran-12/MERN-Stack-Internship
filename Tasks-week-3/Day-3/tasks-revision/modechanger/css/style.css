@@ -1,0 +1,54 @@
+*
+{
+    margin: 0px;
+    padding: opx;
+}
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .dark
+{
+    width: 1170px;
+    height: 300px;
+    text-align: center;
+    background-color: black;
+    color: #F288A4;
+    padding-top: 15%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+.container .light
+{
+    width: 1170px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    color: #3FBFBF;
+    padding-top: 15%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+#btn
+{
+    padding: 20px;
+    margin-top: 3%;
+    background-color: #F288A4;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#btn:hover
+{
+    background-color: #F2E9D8;
+    color:black;
+    font-weight: bold;
+}

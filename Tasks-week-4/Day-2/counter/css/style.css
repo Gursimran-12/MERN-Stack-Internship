@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.row {
+    background-color: bisque;
+    color: black;
+    width: 90%;
+    max-width: 320px;
+    padding: 20px;
+    border: solid 2px black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#plus, #minus {
+    padding: 10px 25px;
+    background-color: black;
+    color: bisque;
+    font-size: 29px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px white;
+    cursor: pointer;
+}
+
+#plus:hover {
+    background-color: green;
+    color: white;
+}
+
+#minus:hover {
+    background-color: crimson;
+    color: white;
+}

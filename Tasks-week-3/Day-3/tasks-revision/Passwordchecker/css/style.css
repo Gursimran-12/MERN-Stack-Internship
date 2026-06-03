@@ -1,0 +1,67 @@
+*
+{
+    margin: 0px;
+    padding: opx;
+}
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .dark
+{
+    width: 1170px;
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(#F0D7D3,#F3C2A3);
+    padding-top: 8%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+.container .light
+{
+    width: 1170px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    color: #3FBFBF;
+    padding-top: 15%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+#password
+{
+    padding: 15px 25px;
+    margin-top: 18px;
+}
+
+#strongPass
+{
+    width: 400px;
+    padding: 12px;
+    background-color: white;
+    color: green;
+    border: solid 2px black;
+    border-radius: 15px;
+    margin-left: 60%;
+    display: none;
+}
+
+#weakPass
+{
+    width: 400px;
+    padding: 12px;
+    background-color: white;
+    color: red;
+    border: solid 2px black;
+    border-radius: 15px;
+    margin-left: 60%;
+    display: none;
+}

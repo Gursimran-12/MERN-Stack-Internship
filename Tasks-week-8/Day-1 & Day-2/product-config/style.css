@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.container .preview {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 500px;
+    height: 480px;
+}
+
+.container #options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    width: 800px;
+    height: 500px;
+    margin: 2px;
+}
+
+.optionStyle
+{
+    background-color: wheat;
+    color: black;
+    width: 750px;
+    padding: 15px;
+}
+
+.optionBtn
+{
+    display: block;
+    padding: 5px;
+    width: 750px;
+    background-color: wheat;
+    border: black 2px solid;
+    margin: 5px;
+    text-align: left;
+}
+
+.optionBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.selected
+{
+    background-color: rgb(54, 204, 54);
+    color: white;
+}

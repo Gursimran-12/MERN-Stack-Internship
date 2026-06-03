@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Implementing Tailwind Concepts </title>
+    <!-- Including the cdn to Access the Css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- // Defining colour of my choice -->
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    // Customizing the size of the screen as per our requirements
+                    'sm': '576px', // Change 640px to 567px
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '768px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '1024px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1280px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1536px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    },
+                    screens: {
+                        // Adding a new screen Size
+                        'xs': '400px',
+                        // => @media (min-width: 992px) { ... }
+                    },
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- Very Basic way of using Tailwind Concepts -->
+    <h1 class="text-clifford text-4xl text-center lg:text-center sm:text-right py-5"> Welcome! </h1>
+
+
+    <!-- Adding container classes -->
+    <!-- // Bydefualt, it will take 100% -->
+    <div class="container mx-auto grid grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-2 gap-5">
+        <!-- Implementing grid Templates -->
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+        <div class="bg-[green] py-5 text-center"> Hello </div>
+
+    </div>
+
+</body>
+
+</html>

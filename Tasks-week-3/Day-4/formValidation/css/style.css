@@ -1,0 +1,111 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.row
+{
+    width: 100%;
+    height: 900px;
+    background: linear-gradient(#C7FFED, #D8FFDB, #008F8C);
+}
+
+.row .box
+{
+    height: 600px;
+    width: 1160px;
+    background-color:#023535 ;
+     /* rgba(255, 255, 255, 0.5); */
+    color: white;
+    border-radius: 25px;
+    border: solid 2px #D8FFDB;
+    margin-left: 12%;
+    position: absolute;
+    top: 15%;
+}
+
+
+#topHead
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 40%;
+    padding-top: 3%;
+}
+
+#username, #uPassword, #emailId, #age
+{
+    padding: 12px;
+    width: 800px;
+    margin-left: 180px;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 2px black;
+}
+
+#btn
+{
+    padding: 20px;
+    width: 100px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 45%;
+}
+
+#btn:hover
+{
+    background-color: black;
+    color: wheat
+}
+
+#emailError
+{
+    display: none;
+    padding: 22px;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 2px red;
+    position: absolute;
+    top: 18px;
+    left: 40%;
+}
+
+#passError
+{
+    display: none;
+    padding: 22px;
+    background-color: black;
+    color: red;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 2px red;
+    position: absolute;
+    top: 18px;
+    left: 40%;
+}
+
+#result
+{
+    display: none;
+    padding: 22px;
+    background-color: black;
+    color: green;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 2px green;
+    position: absolute;
+    top: 18px;
+    left: 40%;
+}

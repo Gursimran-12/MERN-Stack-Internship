@@ -1,0 +1,403 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header,
+nav,
+main,
+section,
+article,
+footer {
+    padding: 20px;
+}
+
+.intro {
+    background-color: #F29BA2;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#btn {
+    background: black;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.social a {
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+.social a:hover {
+    color: black;
+}
+
+
+.logo {
+    font-size: 35px;
+    font-family: monospace;
+    padding: 0% 5%;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.dark ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li a:hover {
+    background-color: #F29BA2;
+    color: black;
+}
+
+#menuBtn {
+    display: none;
+    font-size: 26px;
+    color: #F29BA2;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.theme
+{
+    background-color: black;
+}
+
+.hero {
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/cakeIntro.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+}
+
+
+#pageHead {
+    font-size: 65px;
+    color: white;
+    font-family: cursive;
+}
+
+#pageDesc {
+    font-size: 45px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#order {
+    padding: 15px 25px;
+    background-color: #F29BA2;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: solid 2px white;
+    margin-top: 15px;
+}
+
+#order:hover {
+    background-color: black;
+    color: white;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid {
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+article {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.handBake {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
+
+.handBake:hover {
+    transform: scale(0.9);
+}
+
+.detailBox {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ), url('../images/cake5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    text-align: left;
+    padding: 80px 0 80px 45%;
+    min-height: 400px;
+}
+
+
+#userName,
+#userEmail,
+#phoneNo {
+    width: 300px;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+#nameError {
+    padding: 15px 18px;
+    background-color: #7FC7AF;
+    color: red;
+    margin-top: 25px;
+    border-radius: 15px;
+    border: solid 2px red;
+    display: none;
+}
+
+#emailError {
+    padding: 15px 18px;
+    background-color: #7FC7AF;
+    color: red;
+    margin-top: 25px;
+    border-radius: 15px;
+    border: solid 2px red;
+    display: none;
+}
+
+#result {
+    padding: 15px 18px;
+    background-color:#F29BA2;
+    color: white;
+    margin-top: 25px;
+    border-radius: 15px;
+    border: solid 2px white;
+    display: none;
+}
+
+
+#submit {
+    padding: 15px 25px;
+    margin-top: 30px;
+    background-color: #F29BA2;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mainArea {
+    background-color: #F29BA2;
+    padding: 40px;
+    text-align: center;
+}
+
+
+#offer {
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#search {
+    width: 400px;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#nameList
+{
+    list-style: none;
+    padding: 15px;
+    background-color: #9ACDD9;
+    color: black;
+    margin: 12px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: solid 2px black;
+    display: none;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+}
+
+#btn:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 600px) {
+    #menuBtn {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    ul li {
+        padding: 10px 0;
+    }
+
+    .hero {
+        align-items: center;
+        text-align: center;
+        padding: 0 5%;
+        height: 400px;
+        background-attachment: scroll; 
+    }
+
+    #pageHead {
+        font-size: 40px;
+    }
+
+    #pageDesc {
+        font-size: 26px;
+    }
+
+    #order {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .handBake {
+        height: auto;
+    }
+    .detailBox {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    #userName,
+    #userEmail,
+    #phoneNo {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    #nameError,
+    #emailError,
+    #result {
+        display: none;
+        margin: 15px auto;
+        width: fit-content;
+    }
+
+    .mainArea {
+        padding: 25px 15px;
+    }
+
+    #offer {
+        font-size: 26px;
+    }
+
+    #search {
+        width: 80%;
+        font-size: 16px;
+    }
+
+}
+

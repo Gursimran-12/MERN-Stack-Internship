@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title> Cake Website </title>
+</head>
+
+<body>
+    <header class="intro">
+        <!-- Baked with love, frosted with happiness   -->
+
+        <button id="btn"> Dark Mode </button>
+        <div class="social">
+            <a href="#"><i id="iIcon" class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i id="lIcon" class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </header>
+    <nav id="light">
+        <h2 class="logo"> Patiiserie </h2>
+        <button id="menuBtn"> ☰ </button>
+        <ul id="menu">
+            <li> <a href="#"> Home </a></li>
+            <li> <a href="#"> Menu </a></li>
+            <li> <a href="#"> Cakes </a></li>
+            <li> <a href="#"> Pasteries </a></li>
+            <li> <a href="#"> Contact </a></li>
+        </ul>
+
+    </nav>
+
+    <main id="cakeShop" class="light">
+        <section class="hero">
+            <h3 id="pageHead"> Bite </h3>
+            <p id="pageDesc"> into Happiness </p>
+            <button id="order" class="light"> Order Here </button>
+        </section>
+
+        <section class="container">
+            <h2> HANDCRAFTED CAKES </h2>
+            <div class="grid">
+                <article>
+                    <img class="handBake" src="./images/cake2.jpg">
+                    <h3> Artisanal Perfection </h3>
+                    <p> Beautifully crafted cakes made with skill, passion, and care. </p>
+                </article>
+
+                <article>
+                    <img class="handBake" src="./images/cake1.jpg">
+                    <h3> Freshly Baked Flavors </h3>
+                    <p> Delightful flavors baked fresh daily to ensure perfect taste. </p>
+                </article>
+
+                <article>
+                    <img class="handBake" src="./images/cake3.jpg">
+                    <h3> Custom Designs </h3>
+                    <p> Personalized cakes crafted uniquely to match your special moments. </p>
+                </article>
+
+                <article>
+                    <img class="handBake" src="./images/cake4.jpg">
+                    <h3> Premium Ingredients </h3>
+                    <p> High-quality ingredients blended perfectly for extraordinary cake experiences.</p>
+                </article>
+            </div>
+        </section>
+        <section class="detail">
+            <div class="detailBox">
+                <span id="nameError"> Name is a required field! </span>
+                <span id="emailError"> Email is a required field! </span>
+                <span id="result"> Form submitted Successfully! </span>
+                <form id="myForm">
+                    <input id="userName" type="text" placeholder="Name"> <br>
+                    <input id="userEmail" type="email" placeholder="Email"> <br>
+                    <input id="phoneNo" type="tel" placeholder="Phone Number"> <br>
+                    <button id="submit" type="submit"> Submit </button>
+                </form>
+            </div>
+        </section>
+        <section class="search">
+            <div class="mainArea">
+                <h2 id="offer"> WEEKEND SPECIAL </h2>
+                <p> Flat 20% Off on All Cakes </p>
+                <input id="search" type="text" placeholder="Search flavours here">
+                <ul id="nameList">
+                    <li> Chocolate Cake </li>
+                    <li> Vanilla Cake </li>
+                    <li> Red Velvet Cake </li>
+                    <li> Black Forest Cake </li>
+                    <li> Butterscotch Cake </li>
+                    <li> Strawberry Cake </li>
+                    <li> Pineapple Cake </li>
+                    <li> Lemon Cake </li>
+                    <li> Mango Cake </li>
+                    <li> Carrot Cake </li>
+                    <li> Oreo Cake </li>
+                    <li> Tiramisu Cake </li>
+                    <li> Coffee Cake </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Patiiserie. All Rights Reserved.</p>
+    </footer>
+    <script src="./javaScript/script.js"> </script>
+</body>
+
+</html>

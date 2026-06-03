@@ -1,0 +1,53 @@
+*
+{
+    margin: 0px;
+    padding: opx;
+}
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .row
+{
+    width: 1170px;
+    height: 400px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 5%;
+    margin-top: 3%;
+    border-radius: 3%;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+#nature
+{
+    margin-top: 50px;
+}
+
+#likes
+{
+    width: 27%;
+    height: 40px;
+    margin-left: 36.5%;
+    margin-top: 20px;
+    background-color: aliceblue;
+    color: black;
+}
+
+.fa-heart {
+  font-size: 50%;
+  margin-top: 10px; 
+}
+
+
+
+i:hover
+{
+    background-color: black;
+    color: azure;
+}
+

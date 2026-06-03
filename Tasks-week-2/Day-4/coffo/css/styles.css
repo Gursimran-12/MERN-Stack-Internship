@@ -1,0 +1,730 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+}
+
+nav {
+    background: black;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding-left: 25%;
+}
+
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.menu li a:hover {
+    background: red;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.menu li a.active {
+    background: red;
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+i {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+@media (max-width: 900px) {
+
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        background: black;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 25px 0;
+        display: none;
+    }
+
+    #menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+
+    .menu li a,
+    .menu li a.active,
+    .menu li a:hover {
+        padding: 12px 20px;
+    }
+}
+
+
+.row1 {
+    width: 100%;
+    height: 500px;
+    background: url("../images/coffee123.avif") center/cover no-repeat;
+    position: relative;
+    align-items: center;
+}
+
+.row1 input {
+    display: none;
+}
+
+.hero-slides {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.hero-box {
+    width: 50%;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-box h1 {
+    font-size: 60px;
+    font-weight: 800;
+    padding-left: 15%;
+}
+
+.hero-box p {
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 15%;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    padding-left: 15%;
+}
+
+.btn-red {
+    background: red;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-white {
+    background: white;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero-arrows {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-arrows label {
+    background: white;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#one:checked ~ .hero-slides {
+    transform: translateX(0);
+}
+
+#two:checked ~ .hero-slides {
+    transform: translateX(-50%);
+}
+
+.row2
+{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.col1
+{
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    background: white;
+}
+
+.col1 .text
+{
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;   
+}
+
+.col1 img
+{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  padding-top: 20px;
+}
+
+.row3
+{
+    background-color: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    align-items: center;;
+}
+
+
+.coffee-slider {
+    width: 90%;               
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.coffee-slider input {
+    display: none;
+}
+
+.cs-track {
+    display: flex;
+    width: calc(200% + 40px); 
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: transform 0.6s ease;
+}
+
+.cs-group {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.cs-card {
+    width: 24%;
+    background: #1f272b;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cs-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.cs-card h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cs-card p {
+    font-size: 14px;
+    padding-bottom: 12px;
+    color: #ddd;
+}
+
+#cs1:checked ~ .cs-track {
+    transform: translateX(0);
+}
+
+#cs2:checked ~ .cs-track {
+    transform: translateX(calc(-50%));
+}
+
+.cs-left,
+.cs-right {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background: #333;
+    color: white;
+    border-radius: 50%;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cs-left {
+    left: -10px;
+}
+
+
+.cs-right {
+    right: -10px;
+}
+
+@media (max-width: 600px) {
+
+    .cs-group {
+        flex-wrap: wrap;
+        justify-content: center;  
+    }
+
+    .cs-card {
+        width: 90%;     
+        margin: 0 auto; 
+    }
+
+    .cs-card img {
+        height: 140px;
+    }
+}
+
+.hero-version {
+    position: relative;
+}
+
+.hero-version .slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.hero-version .slide {
+    width: 900px;           
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-version .slide img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.hero-version .content h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.hero-version .content p {
+    line-height: 1.5;
+    color: #eee;
+}
+
+
+#hslide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#hslide2:checked ~ .slides {
+    transform: translateX(-900px);
+}
+
+#hslide3:checked ~ .slides {
+    transform: translateX(-1800px);
+}
+
+
+.row4 {
+    background: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.testimonial-slider {
+    max-width: 900px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-slider input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 200%;       
+    transition: 0.5s;
+}
+
+.slide {
+    width: 50%;        
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+
+.slide img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #555;
+    line-height: 1.5;
+}
+
+#slide1:checked ~ .slides {
+    transform: translateX(0);
+}
+
+#slide2:checked ~ .slides {
+    transform: translateX(-50%);
+}
+
+
+.arrow-box {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.arrow label {
+    width: 50px;
+    height: 50px;
+    background: #444;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+
+.row5
+{
+    background-color: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    align-items: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 850px;  
+    margin: 40px auto;
+}
+
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;   
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); 
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;  
+    object-fit: cover;
+}
+
+.date-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e21818;
+    color: white;
+    font-size: 14px;
+    padding: 10px 18px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.card h3 {
+    margin: 20px 20px 10px;
+    font-size: 18px;
+    color: #222;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card p {
+    padding: 0 20px 20px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+}
+
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr; 
+  }
+}
+
+
+.row6
+{
+    background-color: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    align-items: center;
+}
+
+
+input[type= "email"], input[type= "name"], input[type= "tel"],textarea
+{
+    width: 50%;
+    padding: 12px 15px;
+    margin-top: 12px;
+    margin-bottom: 0.5%;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: rgb(236, 230, 222);
+    color: black;
+    border-style: none;
+
+}
+
+button
+{
+    width: 80px;
+    background-color: #e51313;
+    color: #fff;
+    padding: 8px 8px;
+    border-radius: 15px;
+    border-style: none;
+    margin-top: 10px;
+}
+
+.row7
+{
+    background-color: black;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+#area
+{
+    width: 20%;
+    padding: 5px 5px;
+    margin-top: 2%;
+    margin-bottom: 0.5%;
+    border: 3px solid #e51313;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+#c-icon
+{
+    color: white;
+    padding: 30px;
+    text-transform: lowercase;
+
+}
+
+.social-icons
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap:5px;
+    padding-top: 5%;
+}
+
+#s-icon
+{
+    color: black;
+}
+.social-icons-facebook
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.social-icons-instagram
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.social-icons-twitter
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+.social-icons-linkedin
+{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+
+
+.outline-btn {
+    display: inline-block;
+    padding: 12px 35px;
+    margin-top: 20px;
+    border: 2px solid red;
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease;
+}
+
+.outline-btn:hover {
+    background: red;
+    color: white;
+
+}
+
+.read-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 28px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s;
+}
+
+.read-btn:hover {
+    background: white;
+    color: black;
+}
+
+.blog-read-btn {
+    display: inline-block;
+    margin: 15px auto 20px;
+    padding: 10px 28px;
+    border: 2px solid #e21818;
+    color: #e21818;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease;
+}
+
+.blog-read-btn:hover {
+    background: #e21818;
+    color: white;
+}
+
+footer
+{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+

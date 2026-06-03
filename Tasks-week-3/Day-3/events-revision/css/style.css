@@ -1,0 +1,35 @@
+.dark
+{
+    background: black;
+    color: white;
+}
+
+#bul
+{
+    background-color: teal;
+    color: white;
+    padding: 25px;
+
+}
+
+#inputValue
+{
+    margin-top: 40px;
+}
+
+#butn
+{
+    background-color: black;
+    color: white;
+    padding: 25px;
+
+}
+
+.like
+{
+    margin-top: 30px;
+}
+
+.fa-heart {
+  font-size: 100px; /* Adjust this value to make it bigger */
+}

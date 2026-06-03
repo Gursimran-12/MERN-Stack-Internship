@@ -1,0 +1,42 @@
+*
+{
+    margin: 0px;
+    padding: opx;
+}
+.container
+{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+}
+.container .row
+{
+    width: 1170px;
+    height: 200px;
+    text-align: center;
+    background: linear-gradient(#A4BFBF,#8C8880);
+    padding-top: 8%;
+    margin-top: 3%;
+    border-radius: 15px;
+    border: solid 2px black;
+    font-family: sans-serif;
+}
+
+#search
+{
+    padding: 15px 25px;
+    margin-top: 18px;
+}
+
+#nameList
+{
+    list-style: none;
+    padding: 15px;
+    background-color: #F2D6BD;
+    color: #403F3F;
+    margin: 12px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: solid 2px #403F3F;
+    display: none;
+}
