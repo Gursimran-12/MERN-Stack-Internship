@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Work Portfolio | Gursimran Kaur</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="gradient-bg"></div>
+
+    <!-- HEADER -->
+
+    <header class="glass-header">
+
+        <!-- Left Side Logo -->
+        <div class="college-logo">
+            <img src="images/college-logo.png" alt="College Logo">
+        </div>
+
+        <!-- Right Side Heading -->
+        <div class="logo-section">
+            <h1>My Work Portfolio</h1>
+            <p>Gursimran Kaur (2203443)</p>
+        </div>
+
+    </header>
+
+    <!-- STATS SECTION -->
+
+    <section class="stats-container">
+
+        <div class="stat-card">
+            <i class="fas fa-calendar-check"></i>
+            <h2>23+</h2>
+            <p>Weeks Completed</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-briefcase"></i>
+            <h2> 95% </h2>
+            <p> Productivity Score </p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-code"></i>
+            <h2>4+</h2>
+            <p>Projects</p>
+        </div>
+
+        <div class="stat-card">
+            <i class="fas fa-file-alt"></i>
+            <h2>100%</h2>
+            <p> Learning Progress </p>
+        </div>
+
+    </section>
+
+    <!-- NAVIGATION -->
+
+    <div class="nav-container glass-card">
+
+        <button class="nav-btn active" onclick="showSection('diary', this)">
+            <i class="fas fa-book-open"></i>
+            Daily Diary
+        </button>
+
+        <button class="nav-btn" onclick="showSection('projects', this)">
+            <i class="fas fa-folder-open"></i>
+            Projects Done
+        </button>
+
+    </div>
+
+    <!-- DAILY DIARY SECTION -->
+
+    <section id="diary" class="section active-section">
+
+        <div class="diary-layout">
+
+            <!-- LEFT PANEL -->
+
+            <div class="weeks-panel glass-card">
+
+                <div class="panel-header">
+
+                    <h2>
+                        <i class="fas fa-book"></i>
+                        Daily Diary
+                    </h2>
+
+                    <input type="text" id="weekSearch" placeholder="Search Week..." onkeyup="searchWeeks()">
+
+                </div>
+
+                <div class="weeks-list" id="weeksList">
+
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-1.pdf')">Week 1</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-2.pdf')">Week 2</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-3.pdf')">Week 3</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-4.pdf')">Week 4</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-5.pdf')">Week 5</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-6.pdf')">Week 6</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-7.pdf')">Week 7</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-8.pdf')">Week 8</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-9.pdf')">Week 9</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-10.pdf')">Week 10</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-11.pdf')">Week 11</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-12.pdf')">Week 12</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-13.pdf')">Week 13</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-14.pdf')">Week 14</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-15.pdf')">Week 15</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-16.pdf')">Week 16</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-17.pdf')">Week 17</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-18.pdf')">Week 18</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-19.pdf')">Week 19</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-20.pdf')">Week 20</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-21.pdf')">Week 21</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-22.pdf')">Week 22</button>
+                    <button class="week-btn" onclick="openPDF('Daily-Diary/Week-23.pdf')">Week 23</button>
+
+                </div>
+
+            </div>
+
+            <!-- PDF VIEWER -->
+
+            <div class="pdf-container glass-card">
+
+                <div class="pdf-toolbar">
+
+                    <h2>
+                        <i class="fas fa-file-pdf"></i>
+                        PDF Viewer
+                    </h2>
+
+                    <button class="fullscreen-btn" onclick="fullscreenPDF()">
+
+                        <i class="fas fa-expand"></i>
+                        Fullscreen
+
+                    </button>
+
+                </div>
+
+                <iframe id="pdfFrame"></iframe>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="section">
+
+        <div class="projects-wrapper glass-card">
+
+            <div class="projects-header">
+
+                <h2>
+                    <i class="fas fa-folder"></i>
+                    Projects Portfolio
+                </h2>
+
+                <p>
+                    Professional projects completed during internships,
+                    training and development work.
+                </p>
+
+                <div class="section-divider"></div>
+
+            </div>
+
+            <div class="cards-container">
+
+                <div class="card" onclick="openProject('https://sk-trophy.vercel.app')">
+                    <img src="images/trophy-project.jpg" alt="SK Trophy">
+
+                    <div class="card-content">
+                        <h3>SK Trophy</h3>
+                        <p>Trophy management and showcase platform.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('https://raftaar-clothing.vercel.app/')">
+                    <img src="images/clothing-project.jpg" alt="Raftaar">
+
+                    <div class="card-content">
+                        <h3>Raftaar</h3>
+                        <p>Modern fashion ecommerce platform.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('https://netsquare-internshipapplication.onrender.com')">
+                    <img src="images/internship-project.jpg" alt="Netsquare">
+
+                    <div class="card-content">
+                        <h3>Netsquare Internship</h3>
+                        <p>Training and project management portal.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('https://occulya.com')">
+                    <img src="images/astrology-project.jpg" alt="Occulya">
+
+                    <div class="card-content">
+                        <h3>Occulya</h3>
+                        <p>Astrology prediction platform.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('https://mb-ai-frontend.vercel.app')">
+                    <img src="images/chatbot-project.jpg" alt="MB AI">
+
+                    <div class="card-content">
+                        <h3>MB AI Software</h3>
+                        <p>AI chatbot and automation software.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('YOUR_LINK_6')">
+                    <img src="images/events-project.jpg" alt="Aurevia">
+
+                    <div class="card-content">
+                        <h3>Aurevia</h3>
+                        <p>Event management company website.</p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('YOUR_LINK_7')">
+                    <img src="images/cake-project.jpg" alt="Aeko">
+
+                    <div class="card-content">
+                        <h3>Cakoo</h3>
+                        <p>Cake Showcasing Platform </p>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openProject('https://www.mannbrosleasing.com')">
+                    <img src="images/trailer-project.jpg" alt="Trailer Tracking">
+
+                    <div class="card-content">
+                        <h3>Trailer Tracking System</h3>
+                        <p>Enterprise logistics and tracking platform.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SCROLL TO TOP -->
+
+    <button id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
